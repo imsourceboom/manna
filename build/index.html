@@ -41,27 +41,88 @@
   </head>
   <body id="body">
     <header id="root-header">
-      <div class="mobile"><a href="/index.html"><img class="logo" src="assets/images/logo.svg" alt="Logo"></a><a href="/cart.html">
+      <div class="mobile"><a href="/index.html"><img class="logo" src="assets/images/logo.svg" alt="Logo"></a><a href="/html/cart.html">
           <figure class="cart--icon"><img src="assets/images/icons/shopping-cart-W.svg" alt="Cart">
             <figcaption>5</figcaption>
-          </figure></a><a href="/login.html">
+          </figure></a><a href="/html/login.html">
           <p class="login--button">Login</p></a>
-        <div class="hamburger hamburger--squeeze js-hamburger">
+        <form action="">
+          <label class="search--input-desk">
+            <input type="text" placeholder="상품을 입력하세요.">
+            <input type="submit" value="">
+          </label>
+        </form>
+        <div class="hamburger hamburger--squeeze js-hamburger" id="hamburger">
           <div class="hamburger-box">
             <div class="hamburger-inner"></div>
           </div>
         </div>
-        <nav class="menu--container"></nav>
+        <nav class="mobile--nav-container">
+          <div class="mobile--nav-wrap">
+            <figure><img class="close" src="/assets/images/icons/close.svg" alt="close"></figure>
+            <form action="">
+              <label class="search--input-mobile">
+                <input type="text" placeholder="상품을 입력하세요.">
+                <input type="submit" value="">
+              </label>
+            </form>
+            <div class="sign"><a href="/html/login.html"><span>로그인 / 회원가입</span></a></div>
+            <ul class="menu--wrap">
+              <li><a href="">
+                  <figure><img src="/assets/images/menus/side_dish.svg" alt="반찬총알배송">
+                    <figcaption>반찬총알배송</figcaption>
+                  </figure></a>
+                <div class="line--one"></div>
+                <div class="line--two"></div>
+              </li>
+              <li><a href="">
+                  <figure><img src="/assets/images/menus/emd.svg" alt="안심새벽배송">
+                    <figcaption>안심새벽배송</figcaption>
+                  </figure></a>
+                <div class="line--one"></div>
+                <div class="line--two"></div>
+              </li>
+              <li><a href="">
+                  <figure><img src="/assets/images/menus/lunch_box.svg" alt="도시락 주문">
+                    <figcaption>도시락 주문</figcaption>
+                  </figure></a>
+                <div class="line--one"></div>
+                <div class="line--two"></div>
+              </li>
+              <li><a href="">
+                  <figure><img src="/assets/images/menus/catering.svg" alt="케이터링">
+                    <figcaption>케이터링</figcaption>
+                  </figure></a>
+                <div class="line--one"></div>
+                <div class="line--two"></div>
+              </li>
+              <li><a href="">
+                  <figure><img src="" alt="">
+                    <figcaption></figcaption>
+                  </figure></a>
+                <div class="line--one"></div>
+                <div class="line--two"></div>
+              </li>
+              <li><a href="">
+                  <figure><img src="/assets/images/menus/chicken.svg" alt="올바치킨">
+                    <figcaption>올바치킨</figcaption>
+                  </figure></a>
+                <div class="line--one"></div>
+                <div class="line--two"></div>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
     <main>
       <section id="basic--main">
-        <article class="intro--image" style="padding-top: 100px;">
-          <p class="18px" style="margin-left: 50px; font-size: 18px">글씨 크기 한글 / English font size</p>
-          <p class="16px" style="margin-left: 50px; font-size: 16px">글씨 크기 한글 / English font size</p>
-          <p class="14px" style="margin-left: 50px; font-size: 14px">글씨 크기 한글 / English font size</p>
-          <p class="12px" style="margin-left: 50px; font-size: 12px">글씨 크기 한글 / English font size</p>
-        </article>
+        <figure class="intro--image-wrap"><img src="/assets/images/main/intro_image.jpg" alt=""></figure>
+        <nav class="menu--wrap-desk">
+          <ul>
+            <li>a</li>
+          </ul>
+        </nav>
       </section>
     </main>
     <footer id="root-footer">footer</footer>
