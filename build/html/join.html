@@ -145,28 +145,105 @@
       </nav>
     </header>
     <main>
-      <section id="login">
-        <article class="login--container">
-          <h4>회원 로그인</h4>
-          <form action="">
-            <label class="inputbox--component" for="">
-              <input type="text" placeholder="아이디"/><span class="warning">* 아이디를 입력해주세요</span><span class="able"></span>
-            </label>
-            <label class="inputbox--component" for="">
-              <input type="password" placeholder="비밀번호"/><span class="warning">* 비밀번호를 입력해주세요</span><span class="able"></span>
-            </label>
-            <input class="submit--button--component" type="submit" value="로그인"/>
-          </form>
-          <nav>
-            <label class="checkbox--component" for="id--save">
-              <input type="checkbox" id="id--save"/><span>아이디 저장</span>
-            </label>
-            <ul>
-              <li><a href="">아이디 찾기 / </a><a href="">비밀번호 찾기</a></li>
-              <li><a href="">비회원 주문</a></li>
-            </ul>
-          </nav>
-          <p>아직 회원이 아니세요?<a href="/html/join.html">회원가입</a></p>
+      <section id="join">
+        <article class="join--container">
+          <div class="info--wrap">
+            <div class="box">
+              <h4>회원가입</h4>
+              <form action="">
+                <div class="group">
+                  <label class="inputbox--component" for="">
+                    <input type="text" placeholder="아이디"/><span class="warning">* 현재 사용중인 아이디입니다.</span><span class="able">* 사용 가능한 아이디입니다.</span>
+                  </label>
+                  <div class="confirm--button--component">중복 확인</div>
+                </div>
+                <div class="group wrap">
+                  <label class="inputbox--component" for="">
+                    <input type="password" placeholder="비밀번호"/><span class="warning"></span><span class="able"></span>
+                  </label>
+                  <label class="inputbox--component" for="">
+                    <input type="password" placeholder="비밀번호 확인"/><span class="warning">* 비밀번호를 재입력 해주세요.</span><span class="able"></span>
+                  </label>
+                </div>
+                <div class="group">
+                  <label class="inputbox--component" for="">
+                    <input type="text" placeholder="이름"/><span class="warning">* 이름을 입력해 주세요.</span><span class="able"></span>
+                  </label>
+                </div>
+                <div class="group wrap">
+                  <div class="group">
+                    <select class="select--component">
+                      <option>010</option>
+                      <option>011</option>
+                      <option>016</option>
+                      <option>019</option>
+                    </select>
+                    <label class="inputbox--component number--box text-center" for="">
+                      <input type="text"/><span class="warning"></span><span class="able"></span>
+                    </label>
+                    <label class="inputbox--component number--box text-center" for="">
+                      <input type="text"/><span class="warning"></span><span class="able"></span>
+                    </label>
+                    <div class="confirm--button--component">인증번호 전송</div>
+                  </div>
+                  <div class="group w-100per">
+                    <label class="inputbox--component" for="">
+                      <input type="text" placeholder="인증번호"/><span class="warning">* 휴대폰 번호를 입력해 주세요.</span><span class="able"></span>
+                    </label>
+                    <div class="confirm--button--component">확인</div>
+                  </div>
+                </div>
+                <div class="group wrap">
+                  <div class="group w-100per">
+                    <label class="inputbox--component" for="">
+                      <input type="text" placeholder="주소 입력"/><span class="warning"></span><span class="able"></span>
+                    </label>
+                    <div class="confirm--button--component">주소 검색</div>
+                  </div>
+                  <div class="group w-100per">
+                    <label class="inputbox--component" for="">
+                      <input type="text" placeholder="상세주소 입력"/><span class="warning"></span><span class="able"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="group">
+                  <label class="inputbox--component" for="">
+                    <input type="email" placeholder="이메일"/><span class="warning">* 이메일 양식에 맞춰 입력해주세요.</span><span class="able"></span>
+                  </label>
+                </div>
+                <div class="group">
+                  <label class="inputbox--component" for="">
+                    <input type="text" placeholder="추천인 아이디(선택)"/><span class="warning"></span><span class="able"></span>
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="info--wrap">
+            <div class="box">
+              <form action="">
+                <div class="group direction-column align-start margin--top-64px">
+                  <div class="line"></div>
+                  <label class="checkbox--component">
+                    <input type="checkbox"/><span>전체동의</span>
+                  </label>
+                  <label class="checkbox--component">
+                    <input type="checkbox"/><span>서비스 이용약관 (필수)</span>
+                  </label>
+                  <label class="checkbox--component">
+                    <input type="checkbox"/><span>개인정보처리방침 (필수)</span>
+                  </label>
+                  <label class="checkbox--component">
+                    <input type="checkbox"/><span>본인은 만 14세 이상입니다 (필수)</span>
+                  </label>
+                  <label class="checkbox--component">
+                    <input type="checkbox"/><span>마케팅용 이메일 수신 동의 (선택)</span>
+                  </label>
+                  <input class="submit--button--component" type="submit" value="가입하기"/><span>* 선택항목에 동의하지 않아도 회원가입은 가능합니다.</span>
+                </div>
+              </form>
+            </div>
+          </div>
         </article>
       </section>
     </main>
