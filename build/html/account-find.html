@@ -160,13 +160,19 @@
                   </label>
                   <div class="confirm--button--component w-max-initial w-100per ml-0 my-1">확인</div>
                   <p>아직 회원이 아니세요?<a href="/html/join.html">회원가입</a></p>
+                  <div class="found--box mt-4">
+                    <div class="comment">회원님께서 조회하신 아이디입니다.</div>
+                    <label class="inputbox--component" for="">
+                      <input type="text" placeholder="" disabled="disabled"/><span class="warning"></span><span class="able"></span>
+                    </label>
+                  </div><a class="go-to-login" href="/html/login.html">로그인하기</a>
                 </div>
               </div>
             </div>
             <div class="info--wrap">
-              <div class="box">
+              <div class="box responsive--line">
                 <h4>비밀번호 찾기</h4>
-                <div class="group direction-column">
+                <div class="group direction-column password--find">
                   <label class="inputbox--component" for="">
                     <input type="text" placeholder="아이디"/><span class="warning"></span><span class="able"></span>
                   </label>
@@ -176,8 +182,29 @@
                   <label class="inputbox--component" for="">
                     <input type="email" placeholder="이메일"/><span class="warning">* 잘못된 이메일입니다.</span><span class="able"></span>
                   </label>
-                  <div class="confirm--button--component w-max-initial w-100per ml-0 my-1">확인</div>
-                  <p>아직 회원이 아니세요?<a href="/html/join.html">회원가입</a></p>
+                  <div class="confirm--button--component w-max-initial ml-0 my-1">비밀번호 찾기</div>
+                </div>
+                <h4>비밀번호 찾기</h4>
+                <div class="group direction-column password--authentication">
+                  <label class="inputbox--component" for="">
+                    <input type="text" placeholder="인증번호"/><span class="warning"></span><span class="able"></span>
+                  </label>
+                  <div class="confirm--button--component w-max-initial ml-0 my-1">확인</div>
+                </div>
+                <h4>비밀번호 변경</h4>
+                <div class="group direction-column password--new">
+                  <label class="inputbox--component" for="">
+                    <input type="password" placeholder="새 비밀번호"/><span class="warning"></span><span class="able"></span>
+                  </label>
+                  <label class="inputbox--component" for="">
+                    <input type="password" placeholder="비밀번호 확인"/><span class="warning"></span><span class="able"></span>
+                  </label>
+                  <div class="confirm--button--component w-max-initial ml-0 my-1">확인</div>
+                </div>
+                <div class="group direction-column password--success">
+                  <h3 class="text-center mb-3 font-bold">비밀번호가 변경되었습니다.</h3>
+                  <p class="success--comment">로그인 후 서비스를 이용해주세요.</p>
+                  <div class="confirm--button--component success--login-btn">로그인 하기</div>
                 </div>
               </div>
             </div>
