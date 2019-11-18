@@ -145,73 +145,28 @@
       </nav>
     </header>
     <main>
-      <section id="account-find">
-        <form action="">
-          <article class="join--container">
-            <div class="info--wrap">
-              <div class="box">
-                <h4>아이디 찾기</h4>
-                <div class="group direction-column">
-                  <label class="inputbox--component" for="">
-                    <input type="text" placeholder="이름"/><span class="warning"></span><span class="able"></span>
-                  </label>
-                  <label class="inputbox--component" for="">
-                    <input type="email" placeholder="이메일"/><span class="warning">* 잘못된 이메일입니다.</span><span class="able"></span>
-                  </label>
-                  <div class="confirm--button--component w-max-initial w-100 ml-0 my-1">확인</div>
-                  <p>아직 회원이 아니세요?<a href="/html/join.html">회원가입</a></p>
-                  <div class="found--box mt-4">
-                    <div class="comment">회원님께서 조회하신 아이디입니다.</div>
-                    <label class="inputbox--component" for="">
-                      <input type="text" placeholder="" disabled="disabled"/><span class="warning"></span><span class="able"></span>
-                    </label>
-                  </div><a class="go-to-login" href="/html/login.html">로그인하기</a>
-                </div>
+      <section id="join-success">
+        <article class="container">
+          <div class="flex column align-center">
+            <div class="line thick mb-3 w-100"></div>
+            <div class="comment--wrap">
+              <h2>회원가입이 완료되었습니다.</h2>
+              <p>홍길동님 반갑습니다.</p>
+              <p>당신과의 관계를 우선시 하는 정직한 집반찬 도시락 만나에서</p>
+              <p>앞으로의 모든 식사자리가 행복하시길 바랍니다.</p>
+            </div>
+            <div class="confirm--button--component success--login-btn">로그인 하기</div>
+            <div class="line thin w-100"></div>
+            <h3 class="event-title">만나 특별 이벤트</h3>
+            <div class="line thin w-100"></div>
+            <div class="banner--sale-container w-100" style="background-color: rgba(255,255,255,1); border: 1px solid rgba(0,0,0,.3);">
+              <div class="wrap">
+                <p style="color:rgba(62,62,62,1);"><span>매일</span> pm 8:00 / pm 9:00 - am 12:00</p>
+                <p>번개세일!</p>
               </div>
             </div>
-            <div class="info--wrap">
-              <div class="box responsive--line">
-                <h4>비밀번호 찾기</h4>
-                <div class="group direction-column password--find">
-                  <label class="inputbox--component" for="">
-                    <input type="text" placeholder="아이디"/><span class="warning"></span><span class="able"></span>
-                  </label>
-                  <label class="inputbox--component" for="">
-                    <input type="text" placeholder="이름"/><span class="warning"></span><span class="able"></span>
-                  </label>
-                  <label class="inputbox--component" for="">
-                    <input type="email" placeholder="이메일"/><span class="warning">* 잘못된 이메일입니다.</span><span class="able"></span>
-                  </label>
-                  <div class="confirm--button--component w-max-initial ml-0 my-1">비밀번호 찾기</div>
-                </div>
-                <h4>비밀번호 찾기</h4>
-                <div class="group direction-column password--authentication">
-                  <div class="description mb-07">가입 시, 등록한 이메일로 인증번호를 전송합니다.</div>
-                  <p class="mb-1 opacity-50">인증번호를 입력하시고 인증을 진행해주세요.</p>
-                  <label class="inputbox--component error" for="">
-                    <input type="text" placeholder="인증번호"/><span class="warning">* 인증번호를 입력해주세요.</span><span class="able"></span>
-                  </label>
-                  <div class="confirm--button--component w-max-initial ml-0 my-1">확인</div>
-                </div>
-                <h4>비밀번호 변경</h4>
-                <div class="group direction-column password--new">
-                  <label class="inputbox--component" for="">
-                    <input type="password" placeholder="새 비밀번호"/><span class="warning"></span><span class="able"></span>
-                  </label>
-                  <label class="inputbox--component" for="">
-                    <input type="password" placeholder="비밀번호 확인"/><span class="warning"></span><span class="able"></span>
-                  </label>
-                  <div class="confirm--button--component w-max-initial ml-0 my-1">확인</div>
-                </div>
-                <div class="group direction-column password--success">
-                  <h3 class="text-center mb-3 font-bold">비밀번호가 변경되었습니다.</h3>
-                  <p class="success--comment">로그인 후 서비스를 이용해주세요.</p>
-                  <div class="confirm--button--component success--login-btn">로그인 하기</div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </form>
+          </div>
+        </article>
       </section>
     </main>
     <footer id="root-footer">
