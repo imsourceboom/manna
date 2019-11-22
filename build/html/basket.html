@@ -157,29 +157,129 @@
       </nav>
     </header>
     <main>
-      <section id="login">
-        <article class="login--container">
-          <h4>회원 로그인</h4>
-          <form action="">
-            <label class="inputbox--component" for="">
-              <input type="text" placeholder="아이디"/><span class="warning">* 아이디를 입력해주세요</span><span class="able"></span>
-            </label>
-            <label class="inputbox--component" for="">
-              <input type="password" placeholder="비밀번호"/><span class="warning">* 비밀번호를 입력해주세요</span><span class="able"></span>
-            </label>
-            <input class="submit--button--component" type="submit" value="로그인"/>
-          </form>
-          <nav>
-            <label class="checkbox--component" for="id--save">
-              <input type="checkbox" id="id--save"/><span>아이디 저장</span>
-            </label>
-            <ul>
-              <li><a href="/html/account-find.html">아이디 찾기 / 비밀번호 찾기</a></li>
-              <li><a href="">비회원 주문</a></li>
+      <section id="basket">
+        <form action="">
+          <div class="container">
+            <hgroup class="basket--title-component">
+              <h3 class="title">장바구니</h3><span></span>
+            </hgroup>
+            <ul class="basket--step-component">
+              <li class="step active">장바구니</li>
+              <li>주문서 작성 및 결제</li>
+              <li>주문완료</li>
             </ul>
-          </nav>
-          <p>아직 회원이 아니세요?<a href="/html/join.html">회원가입</a></p>
-        </article>
+            <table class="basket--table">
+              <thead>
+                <tr>
+                  <th>
+                    <label class="checkbox--component">
+                      <input type="checkbox"/>
+                    </label>
+                  </th>
+                  <th>상품정보</th>
+                  <th>수량</th>
+                  <th>상품금액</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <label class="checkbox--component">
+                      <input type="checkbox"/>
+                    </label>
+                  </td>
+                  <td>
+                    <figure><img src="https://source.unsplash.com/collection/190727/340x440" alt=""></figure>
+                    <p>시레기 된장국 청국장 올갱이해장국</p>
+                  </td>
+                  <td>
+                    <div class="count--component responsive">
+                      <div class="minus"><img src="/assets/images/icons/minus.svg" alt=""/></div>
+                      <div class="result">99</div>
+                      <div class="plus"><img src="/assets/images/icons/plus.svg" alt=""/></div>
+                    </div>
+                  </td>
+                  <td><span class="price">4800</span>원
+                    <figure class="close"><img src="/assets/images/icons/close.svg" alt=""></figure>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox--component">
+                      <input type="checkbox"/>
+                    </label>
+                  </td>
+                  <td>
+                    <figure><img src="https://source.unsplash.com/collection/190727/340x440" alt=""></figure>
+                    <p>시레기 된장국 청국장 올갱이해장국</p>
+                  </td>
+                  <td>
+                    <div class="count--component responsive">
+                      <div class="minus"><img src="/assets/images/icons/minus.svg" alt=""/></div>
+                      <div class="result">99</div>
+                      <div class="plus"><img src="/assets/images/icons/plus.svg" alt=""/></div>
+                    </div>
+                  </td>
+                  <td><span class="price">4800</span>원
+                    <figure class="close"><img src="/assets/images/icons/close.svg" alt=""></figure>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox--component">
+                      <input type="checkbox"/>
+                    </label>
+                  </td>
+                  <td>
+                    <figure><img src="https://source.unsplash.com/collection/190727/340x440" alt=""></figure>
+                    <p>시레기 된장국 청국장 올갱이해장국</p>
+                  </td>
+                  <td>
+                    <div class="count--component responsive">
+                      <div class="minus"><img src="/assets/images/icons/minus.svg" alt=""/></div>
+                      <div class="result">99</div>
+                      <div class="plus"><img src="/assets/images/icons/plus.svg" alt=""/></div>
+                    </div>
+                  </td>
+                  <td><span class="price">4800</span>원
+                    <figure class="close"><img src="/assets/images/icons/close.svg" alt=""></figure>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="button--type-component mt-1" type="button" style="max-width: 100px; font-size: 14px;">선택상품삭제</button>
+            <ul class="calculated--total-component">
+              <li>
+                <div class="box">
+                  <p>상품금액</p>
+                  <p><span class="price">30000</span>원</p>
+                </div>
+              </li>
+              <li>
+                <div class="arithmetic minus"></div>
+                <div class="box">
+                  <p>할인</p>
+                  <p><span class="price">2000</span>원</p>
+                </div>
+              </li>
+              <li>
+                <div class="arithmetic plus"></div>
+                <div class="box">
+                  <p>배송비</p>
+                  <p><span class="price">3000</span>원</p>
+                </div>
+              </li>
+              <li>
+                <div class="arithmetic equal white"></div>
+                <div class="box">
+                  <p>합계</p>
+                  <p><span class="price">35000</span>원</p>
+                </div>
+              </li>
+            </ul>
+            <input class="submit--button--component order" type="submit" value="주문하기"/>
+          </div>
+        </form>
       </section>
     </main>
     <footer id="root-footer">
