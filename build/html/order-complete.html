@@ -157,29 +157,51 @@
       </nav>
     </header>
     <main>
-      <section id="login">
-        <article class="container">
-          <h4>회원 로그인</h4>
-          <form action="">
-            <label class="inputbox--component" for="">
-              <input type="text" placeholder="아이디"/><span class="warning">* 아이디를 입력해주세요</span><span class="able"></span>
-            </label>
-            <label class="inputbox--component" for="">
-              <input type="password" placeholder="비밀번호"/><span class="warning">* 비밀번호를 입력해주세요</span><span class="able"></span>
-            </label>
-            <input class="submit--button--component" type="submit" value="로그인"/>
-          </form>
-          <nav>
-            <label class="checkbox--component" for="id--save">
-              <input type="checkbox" id="id--save"/><span>아이디 저장</span>
-            </label>
-            <ul>
-              <li><a href="/html/account-find.html">아이디 찾기 / 비밀번호 찾기</a></li>
-              <li><a href="/html/order-check.html">비회원 주문</a></li>
-            </ul>
-          </nav>
-          <p>아직 회원이 아니세요?<a href="/html/join.html">회원가입</a></p>
-        </article>
+      <section id="order-complete">
+        <div class="container">
+          <hgroup class="basket--title-component">
+            <h3 class="title">주문완료</h3><span>오늘도 만나를 이용해 주셔서 감사합니다.</span>
+          </hgroup>
+          <ul class="basket--step-component">
+            <li class="step">장바구니</li>
+            <li class="step">주문서 작성 및 결제</li>
+            <li class="step active">주문완료</li>
+          </ul>
+          <!-- 주문 정보-->
+          <ul class="order--board">
+            <li>
+              <hgroup>
+                <h4>주문 정보</h4>
+              </hgroup>
+            </li>
+            <li>
+              <div class="title">주문자</div>
+              <div class="description"><span>userIdname</span></div>
+            </li>
+            <li>
+              <div class="title">주문번호</div>
+              <div class="description"><span>00100128991222221234</span></div>
+            </li>
+            <li>
+              <div class="title">결제정보</div>
+              <div class="description"><span>신용카드</span></div>
+            </li>
+            <li>
+              <div class="title">상품정보</div>
+              <div class="description"><span>시래기 된장지짐 1개 외 5개</span></div>
+            </li>
+            <li>
+              <div class="title">주소</div>
+              <div class="description"><span>대전광역시 유성구 상대서로 11 (라드빌딩)</span></div>
+            </li>
+          </ul>
+          <div class="buttons--container">
+            <div class="wrap">
+              <button class="button--type-component" type="button">이어서 쇼핑하기</button>
+              <button class="button--type-component" type="button">주문조회</button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer id="root-footer">
