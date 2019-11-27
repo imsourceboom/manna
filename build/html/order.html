@@ -208,6 +208,7 @@
                 </tr>
               </tbody>
             </table>
+            <!-- 할인혜택-->
             <ul class="order--board">
               <li>
                 <hgroup>
@@ -226,7 +227,16 @@
                   </label><span>point</span>
                 </div>
               </li>
+              <!-- 포인트가 없을 경우-->
+              <li>
+                <div class="flex align-center pl-2">현재 보유 포인트가 없습니다.</div>
+              </li>
+              <!-- 비회원일 경우-->
+              <li>
+                <div class="flex align-center pl-2">비회원 주문 시 포인트를 사용할 수 없습니다.</div>
+              </li>
             </ul>
+            <!-- 주문자 정보-->
             <ul class="order--board">
               <li>
                 <hgroup>
@@ -245,7 +255,42 @@
                 <div class="title">이메일</div>
                 <div class="description"><span>usernameid99@gmail.com</span></div>
               </li>
+              <!-- 비회원 주문-->
+              <li>
+                <div class="title">주문자</div>
+                <div class="description">
+                  <label class="inputbox--component mb-0" for="" style="max-width: 256px;">
+                    <input/><span class="warning"></span><span class="able"></span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="title">휴대폰</div>
+                <div class="description">
+                  <select class="select--component mr-05">
+                    <option>010</option>
+                    <option>011</option>
+                    <option>016</option>
+                    <option>019</option>
+                  </select>
+                  <label class="inputbox--component mb-0 mr-05" for="" style="max-width: 80px;">
+                    <input/><span class="warning"></span><span class="able"></span>
+                  </label>
+                  <label class="inputbox--component mb-0" for="" style="max-width: 80px;">
+                    <input/><span class="warning"></span><span class="able"></span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="title">이메일</div>
+                <div class="description">
+                  <label class="inputbox--component mb-0" for="" style="max-width: 256px;">
+                    <input/><span class="warning"></span><span class="able"></span>
+                  </label>
+                </div>
+              </li>
             </ul>
+            <!-- 배송자 정보-->
             <ul class="order--board">
               <li>
                 <hgroup>
@@ -306,12 +351,111 @@
               <li>
                 <div class="title">배송 요청사항</div>
                 <div class="description">
-                  <label class="inputbox--component mb-0" for="">
-                    <input/><span class="warning"></span><span class="able"></span>
+                  <textarea class="textarea--component mt-05 mb-05 resize-none" name="" rows="10"></textarea>
+                </div>
+              </li>
+            </ul>
+            <!-- 배송구분 (시안 확정 전)-->
+            <ul class="order--board">
+              <li>
+                <hgroup>
+                  <h4>배송구분</h4>
+                </hgroup>
+              </li>
+              <li>
+                <div class="title">배송구분</div>
+                <div class="description">
+                  <input class="radio--button-component" type="radio" name="delivery" id="early-delivery" value="value" hidden="hidden" checked="checked"/>
+                  <label for="early-delivery">새벽배송</label>
+                  <input class="radio--button-component" type="radio" name="delivery" id="basic-delivery" value="value" hidden="hidden"/>
+                  <label for="basic-delivery">일반배송</label>
+                </div>
+              </li>
+            </ul>
+            <!-- 결제수단 (시안 확정 전)-->
+            <ul class="order--board">
+              <li>
+                <hgroup>
+                  <h4>결제수단</h4>
+                </hgroup>
+              </li>
+              <li>
+                <div class="title">일반결제</div>
+                <div class="description">
+                  <input class="radio--button-component" type="radio" name="payment" id="card-payment" value="value" hidden="hidden" checked="checked"/>
+                  <label for="card-payment">신용카드</label>
+                  <input class="radio--button-component" type="radio" name="payment" id="phone-payment" value="value" hidden="hidden"/>
+                  <label for="phone-payment">휴대폰</label>
+                </div>
+              </li>
+            </ul>
+            <!-- 이용약관 (안의 내용들 너무 길어서 보류)-->
+            <ul class="order--board">
+              <li>
+                <hgroup>
+                  <h4>이용 약관</h4>
+                </hgroup>
+              </li>
+              <li>
+                <div class="flex column w-100 mt-1">
+                  <div class="box"> </div>
+                  <label class="checkbox--component my-1">
+                    <input type="checkbox"/><span>약관에 동의합니다.</span>
                   </label>
                 </div>
               </li>
             </ul>
+            <!-- 개인정보처리방침 (내용 확정 전)-->
+            <ul class="order--board mt-2">
+              <li>
+                <hgroup>
+                  <h4>개인정보처리방침</h4>
+                </hgroup>
+              </li>
+              <li>
+                <div class="flex column w-100 mt-1">
+                  <div class="box"> </div>
+                  <label class="checkbox--component my-1">
+                    <input type="checkbox"/><span>약관에 동의합니다.</span>
+                  </label>
+                </div>
+              </li>
+              <li style="border:0;">
+                <label class="checkbox--component mt-1">
+                  <input type="checkbox"/><span>전체 항목 동의</span>
+                </label>
+              </li>
+            </ul>
+            <ul class="calculated--total-component">
+              <li>
+                <div class="box">
+                  <p>상품금액</p>
+                  <p><span class="price">30000</span>원</p>
+                </div>
+              </li>
+              <li>
+                <div class="arithmetic minus"></div>
+                <div class="box">
+                  <p>할인</p>
+                  <p><span class="price">2000</span>원</p>
+                </div>
+              </li>
+              <li>
+                <div class="arithmetic plus"></div>
+                <div class="box">
+                  <p>배송비</p>
+                  <p><span class="price">3000</span>원</p>
+                </div>
+              </li>
+              <li>
+                <div class="arithmetic equal white"></div>
+                <div class="box">
+                  <p>합계</p>
+                  <p><span class="price">35000</span>원</p>
+                </div>
+              </li>
+            </ul>
+            <input class="submit--button--component order" type="submit" value="결제하기"/>
           </div>
         </form>
       </section>
