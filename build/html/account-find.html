@@ -42,44 +42,60 @@
   </head>
   <body id="body">
     <header class="sign" id="root-header">
-      <div class="container"><a href="/index.html"><img class="logo" src="/assets/images/logo.svg" alt="Logo"></a><a href="/html/basket.html">
+      <div class="container">
+        <!-- 로고 (Desk and Mobile)--><a href="/index.html"><img class="logo" src="/assets/images/logo.svg" alt="Logo"></a>
+        <!-- 장바구니 아이콘 (Desk and Mobile)--><a href="/html/basket.html">
           <figure class="cart--icon"><img src="/assets/images/icons/shopping-cart-W.svg" alt="Cart">
             <figcaption>5</figcaption>
           </figure></a>
-        <div class="login--button"><a href="/html/login.html">
-            <p>Login</p></a><a href="/html/refering.html">
-            <figure><img src="/assets/images/icons/user.svg" alt="">
+        <!-- 로그인 버튼 (Desk)-->
+        <div class="login--button">
+          <!-- 로그인 전--><a href="/html/login.html">
+            <p>Login</p></a>
+          <!-- 로그인 후--><a href="/html/refering.html">
+            <figure><img class="usericon-white active" src="/assets/images/icons/user-W.svg" alt=""><img class="usericon" src="/assets/images/icons/user.svg" alt="">
               <figcaption>UserName<span>님</span></figcaption>
-            </figure></a></div>
+            </figure></a>
+        </div>
+        <!-- 회원가입 버튼 (Desk)-->
         <div class="join--button"><a href="/html/join.html">
             <p>Join</p></a><a href="/html/login.html"><span>Logout</span></a></div>
+        <!-- 검색창 (Desk)-->
         <form action="">
           <label class="search--input-desk">
             <input type="text" placeholder="상품을 입력하세요.">
             <input type="submit" value="">
           </label>
         </form>
+        <!-- 햄버거 버튼 (Mobile)-->
         <div class="hamburger hamburger--squeeze js-hamburger" id="hamburger">
           <div class="hamburger-box">
             <div class="hamburger-inner"></div>
           </div>
         </div>
+        <!-- 네비게이션 영역 (Mobile Only)-->
         <nav class="mobile--nav-container">
           <div class="mobile--nav-wrap">
+            <!-- 닫기 버튼-->
             <figure><img class="close" src="/assets/images/icons/close.svg" alt="close"></figure>
+            <!-- 검색창-->
             <form action="">
               <label class="search--input-mobile">
                 <input type="text" placeholder="상품을 입력하세요.">
                 <input type="submit" value="">
               </label>
             </form>
-            <div class="mobile--sign-wrap"><span><a href="/html/login.html">로그인</a> / <a href="/html/join.html">회원가입</a></span>
+            <!-- 로그인 및 회원가입 버튼 과 로그인 후-->
+            <div class="mobile--sign-wrap">
+              <!-- 로그인 전--><span><a href="/html/login.html">로그인</a> / <a href="/html/join.html">회원가입</a></span>
+              <!-- 로그인 후-->
               <div><a href="/html/refering.html">
                   <figure><img src="/assets/images/icons/user.svg" alt="">
                     <figcaption>UserName<span>님</span></figcaption>
                   </figure></a><a href="/html/login.html">
                   <p>Logout</p></a></div>
             </div>
+            <!-- 메뉴 영역-->
             <ul class="menu--wrap">
               <li><a href="/html/category.html">
                   <figure><img src="/assets/images/menus/side_dish.svg" alt="반찬총알배송">
@@ -88,7 +104,7 @@
                 <div class="line--one"></div>
                 <div class="line--two"></div>
               </li>
-              <li><a href="/html/category.html">
+              <li><a href="/html/early.html">
                   <figure><img src="/assets/images/menus/emd.svg" alt="안심새벽배송">
                     <figcaption>안심새벽배송</figcaption>
                   </figure></a>
@@ -127,13 +143,14 @@
           </div>
         </nav>
       </div>
+      <!-- 메뉴 영역 (Tablet, Desk Only)-->
       <nav class="sticky--menu-desk">
         <ul class="wrap">
           <li><a href="/html/category.html">
               <figure><img src="/assets/images/menus/side_dish_W.svg" alt="반찬총알배송">
                 <figcaption>반찬총알배송</figcaption>
               </figure></a></li>
-          <li><a href="/html/category.html">
+          <li><a href="/html/early.html">
               <figure><img src="/assets/images/menus/emd_W.svg" alt="안심새벽배송">
                 <figcaption>안심새벽배송</figcaption>
               </figure></a></li>
@@ -171,8 +188,8 @@
                     <input type="email" placeholder="이메일"/><span class="warning">* 잘못된 이메일입니다.</span><span class="able"></span>
                   </label>
                   <div class="confirm--button--component w-max-initial w-100 ml-0 my-1">확인</div>
-                  <p>아직 회원이 아니세요?<a href="/html/join.html">회원가입</a></p>
-                  <div class="found--box mt-4">
+                  <p class="mb-4">아직 회원이 아니세요?<a href="/html/join.html">회원가입</a></p>
+                  <div class="found--box">
                     <div class="comment">회원님께서 조회하신 아이디입니다.</div>
                     <label class="inputbox--component" for="">
                       <input type="text" placeholder="" disabled="disabled"/><span class="warning"></span><span class="able"></span>
@@ -247,7 +264,7 @@
             <li>주소 : 세종특별자치시 보듬3로 104-15, 104호(아름동, 엘스빌딩)</li>
             <li>대표변호 : 010-1234-1234</li>
             <li>Copyright © Man Na. All rights Reserved.</li>
-            <li><a href=""><img src="/assets/images/icons/sliders.svg" alt="go to admin icon"></a></li>
+            <li><a href=""><img src="/assets/images/icons/admin.svg" alt="go to admin icon"></a></li>
           </ul>
         </div>
       </div>
