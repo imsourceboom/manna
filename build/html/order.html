@@ -179,7 +179,7 @@
         <form action="">
           <div class="container">
             <hgroup class="basket--title-component">
-              <h3 class="title">장바구니</h3><span>상세 내용들을 정확하게 기재해 주세요.</span>
+              <h3 class="title">주문서 작성 및 결제</h3><span>상세 내용들을 정확하게 기재해 주세요.</span>
             </hgroup>
             <ul class="basket--step-component">
               <li class="step">장바구니</li>
@@ -448,7 +448,41 @@
           <div id="payment-container">
             <figure class="toggle"></figure>
             <div class="wrap">
-              <h1>Test</h1>
+              <div class="contents--box">
+                <ul class="order--payment-custom">
+                  <li>
+                    <div class="box">
+                      <p>상품금액</p><b><span class="price">30000</span>원</b>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="minus"></div>
+                    <div class="box">
+                      <p>포인트</p><b><span class="price">30000</span>원</b>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="plus"></div>
+                    <div class="box">
+                      <p>배송비</p><b><span class="price">30000</span>원</b>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="equal"></div>
+                    <div class="box flex align-center">
+                      <p>합계</p><b class="total"><span class="price">30000</span>원</b>
+                    </div>
+                  </li>
+                  <li>
+                    <input class="submit--button--component order payment--custom-btn" type="submit" value="결제하기"/>
+                  </li>
+                </ul>
+              </div>
+              <div class="comments">
+                <p>*회원님은 일반회원 입니다.</p>
+                <p class="cyan">*구매 시 1% 포인트 적립 예정</p>
+                <p class="cyan">*배송비, 세종지역에 따라 적용</p>
+              </div>
             </div>
           </div>
         </form>
