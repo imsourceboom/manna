@@ -35,6 +35,7 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#ffffff">
     <title>MANNA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/main.css">
     <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js" async defer> </script>
@@ -225,7 +226,7 @@
                 </tr>
               </tbody>
             </table>
-            <!-- 할인혜택-->
+            <!-- 포인트-->
             <ul class="order--board">
               <li>
                 <hgroup>
@@ -324,6 +325,15 @@
                 </div>
               </li>
               <li>
+                <div class="title">배송구분</div>
+                <div class="description">
+                  <div id="order-flatpickr">
+                    <button type="button" data-toggle><img src="/assets/images/icons/calendar.svg" alt=""></button>
+                    <input type="text" data-input>
+                  </div>
+                </div>
+              </li>
+              <li>
                 <div class="title">주소</div>
                 <div class="description direction-column align-start">
                   <div class="flex mt-05">
@@ -366,26 +376,17 @@
                 </div>
               </li>
               <li>
+                <div class="title" style="line-height: 1.3;">공동출입문<br/>비밀번호</div>
+                <div class="description">
+                  <label class="inputbox--component mb-0" for="" style="max-width: 256px;">
+                    <input/><span class="warning"></span><span class="able"></span>
+                  </label>
+                </div>
+              </li>
+              <li>
                 <div class="title">배송 요청사항</div>
                 <div class="description">
                   <textarea class="textarea--component mt-05 mb-05 resize-none" name="" rows="10"></textarea>
-                </div>
-              </li>
-            </ul>
-            <!-- 배송구분 (시안 확정 전)-->
-            <ul class="order--board">
-              <li>
-                <hgroup>
-                  <h4>배송구분</h4>
-                </hgroup>
-              </li>
-              <li>
-                <div class="title">배송구분</div>
-                <div class="description">
-                  <input class="radio--button-component" type="radio" name="delivery" id="early-delivery" value="value" hidden="hidden" checked="checked"/>
-                  <label for="early-delivery">새벽배송</label>
-                  <input class="radio--button-component" type="radio" name="delivery" id="basic-delivery" value="value" hidden="hidden"/>
-                  <label for="basic-delivery">일반배송</label>
                 </div>
               </li>
             </ul>
@@ -443,36 +444,12 @@
                 </label>
               </li>
             </ul>
-            <ul class="calculated--total-component">
-              <li>
-                <div class="box">
-                  <p>상품금액</p>
-                  <p><span class="price">30000</span>원</p>
-                </div>
-              </li>
-              <li>
-                <div class="arithmetic minus"></div>
-                <div class="box">
-                  <p>할인</p>
-                  <p><span class="price">2000</span>원</p>
-                </div>
-              </li>
-              <li>
-                <div class="arithmetic plus"></div>
-                <div class="box">
-                  <p>배송비</p>
-                  <p><span class="price">3000</span>원</p>
-                </div>
-              </li>
-              <li>
-                <div class="arithmetic equal white"></div>
-                <div class="box">
-                  <p>합계</p>
-                  <p><span class="price">35000</span>원</p>
-                </div>
-              </li>
-            </ul>
-            <input class="submit--button--component order" type="submit" value="결제하기"/>
+          </div>
+          <div id="payment-container">
+            <figure class="toggle"></figure>
+            <div class="wrap">
+              <h1>Test</h1>
+            </div>
           </div>
         </form>
       </section>
