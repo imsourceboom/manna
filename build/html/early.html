@@ -184,6 +184,12 @@
                 </figure>
               </hgroup>
             </article>
+            <div class="category--empty-component">
+              <div class="wrap">
+                <p>서비스 준비중입니다.</p>
+                <p>정직한 서비스를 제공할 수 있도록 노력하겠습니다.</p>
+              </div>
+            </div>
             <article class="products--wrap">
               <article class="calendar-container">
                 <div class="wrap">
@@ -202,8 +208,8 @@
                       <tbody id="calendar-body"></tbody>
                     </table>
                     <div class="button-wrap">
-                      <button id="previous"><img src="/assets/images/icons/chevron-left-W.svg" alt=""/></button>
-                      <button id="next"><img src="/assets/images/icons/chevron-right-W.svg" alt=""/></button>
+                      <button type="button" id="previous"><img src="/assets/images/icons/chevron-left-W.svg" alt=""/></button>
+                      <button type="button" id="next"><img src="/assets/images/icons/chevron-right-W.svg" alt=""/></button>
                     </div>
                   </div>
                 </div>
@@ -213,10 +219,10 @@
                 <div class="diet--box">
                   <div class="information">* 2 ~ 3인 식사 기준입니다.</div>
                   <hgroup>
-                    <h3>식단표 확인란</h3><span>2019-11-6</span>
+                    <h3>식단표 확인란</h3><span id="selected--date-view">2019.11.6</span>
                   </hgroup>
-                  <ul>
-                    <li> <span>메뉴 1</span></li>
+                  <ul id="selected--date-dataviewbox">
+                    <li><span>메뉴 1</span></li>
                     <li> <span>메뉴 2</span></li>
                     <li> <span>메뉴 3</span></li>
                     <li> <span>메뉴 4</span></li>
@@ -271,8 +277,8 @@
                     <div class="name">개월 수</div>
                     <div class="data">
                       <div class="direct">
-                        <label class="checkbox--component">
-                          <input type="checkbox"/><span>직접입력</span>
+                        <label class="checkbox--component" for="direct">
+                          <input type="checkbox" id="direct" checked="checked"/><span>직접입력</span>
                         </label>
                         <label class="inputbox--component" for="">
                           <input type="text"/><span class="warning"></span><span class="able"></span>
