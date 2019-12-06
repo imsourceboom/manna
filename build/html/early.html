@@ -208,72 +208,132 @@
                   </div>
                 </div>
               </article>
+              <div class="vertical--line"></div>
               <div class="choosed--check">
                 <div class="diet--box">
+                  <div class="information">* 2 ~ 3인 식사 기준입니다.</div>
                   <hgroup>
-                    <h3>식단표 확인란</h3><span>2019-11-4</span>
+                    <h3>식단표 확인란</h3><span>2019-11-6</span>
                   </hgroup>
                   <ul>
-                    <li>메뉴1</li>
-                    <li>메뉴2</li>
-                    <li>메뉴3</li>
-                    <li>메뉴4</li>
-                    <li>메뉴5</li>
+                    <li> <span>메뉴 1</span></li>
+                    <li> <span>메뉴 2</span></li>
+                    <li> <span>메뉴 3</span></li>
+                    <li> <span>메뉴 4</span></li>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
                   </ul>
                 </div>
                 <div class="choosed--box">
+                  <div class="information">
+                    <p class="mt-03">* 선택한 날짜의 식단표 이외의 식단을 원한다면 전화 문의해주세요.</p>
+                    <p class="mt-03">* 주문은 12시 마감됩니다.</p>
+                    <p class="mt-03">* 새벽 6시 이후 주문 가능하며 새벽 6시 이전까지 배송해드립니다.</p>
+                  </div>
                   <div class="week">
                     <div class="name">주 횟수</div>
-                    <div class="data"></div>
+                    <div class="data">
+                      <label class="checkbox--component">
+                        <input type="checkbox"/><span>월</span>
+                      </label>
+                      <label class="checkbox--component">
+                        <input type="checkbox"/><span>화</span>
+                      </label>
+                      <label class="checkbox--component">
+                        <input type="checkbox"/><span>수</span>
+                      </label>
+                      <label class="checkbox--component">
+                        <input type="checkbox"/><span>목</span>
+                      </label>
+                      <label class="checkbox--component">
+                        <input type="checkbox"/><span>금</span>
+                      </label>
+                      <label class="checkbox--component">
+                        <input type="checkbox"/><span>토</span>
+                      </label>
+                      <div class="caution">* 최대 주 3회까지 가능</div>
+                    </div>
                   </div>
                   <div class="set">
                     <div class="name">세트 수</div>
-                    <div class="data"></div>
+                    <div class="data">
+                      <div class="count--component">
+                        <div class="minus"><img src="/assets/images/icons/minus.svg" alt=""/></div>
+                        <div class="result">99</div>
+                        <div class="plus"><img src="/assets/images/icons/plus.svg" alt=""/></div>
+                      </div>
+                      <div class="caution">* 최대 3세트까지 주문 가능</div>
+                    </div>
                   </div>
                   <div class="month">
-                    <div class="name">계월 수</div>
-                    <div class="data"></div>
+                    <div class="name">개월 수</div>
+                    <div class="data">
+                      <div class="direct">
+                        <label class="checkbox--component">
+                          <input type="checkbox"/><span>직접입력</span>
+                        </label>
+                        <label class="inputbox--component" for="">
+                          <input type="text"/><span class="warning"></span><span class="able"></span>
+                        </label><span>개월</span>
+                      </div>
+                      <div class="indirect">
+                        <label class="checkbox--component">
+                          <input type="checkbox"/>
+                        </label>
+                        <select class="select--component">
+                          <option>1개월</option>
+                          <option>2개월</option>
+                          <option>3개월</option>
+                          <option>4개월</option>
+                          <option>5개월</option>
+                          <option>6개월</option>
+                        </select>
+                      </div>
+                      <div class="caution">* 최소 한달 가능</div>
+                    </div>
                   </div>
                 </div>
               </div>
+              <ul class="calculated--total-component">
+                <li>
+                  <div class="box">
+                    <p>상품금액</p>
+                    <p><span class="price">30000</span>원</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="arithmetic plus"></div>
+                  <div class="box">
+                    <p>주 횟수</p>
+                    <p><span class="price">2</span>회</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="arithmetic plus"></div>
+                  <div class="box">
+                    <p>세트 수</p>
+                    <p><span class="price">3</span>세트</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="arithmetic plus"></div>
+                  <div class="box">
+                    <p>배송비</p>
+                    <p><span class="price">3000</span>원</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="arithmetic equal white"></div>
+                  <div class="box">
+                    <p>합계</p>
+                    <p><span class="price">35000</span>원</p>
+                  </div>
+                </li>
+              </ul>
+              <input class="submit--button--component order font-bold" type="submit" value="주문하기"/>
             </article>
-            <ul class="calculated--total-component">
-              <li>
-                <div class="box">
-                  <p>상품금액</p>
-                  <p><span class="price">30000</span>원</p>
-                </div>
-              </li>
-              <li>
-                <div class="arithmetic plus"></div>
-                <div class="box">
-                  <p>주 횟수</p>
-                  <p><span class="price">2</span>회</p>
-                </div>
-              </li>
-              <li>
-                <div class="arithmetic plus"></div>
-                <div class="box">
-                  <p>세트 수</p>
-                  <p><span class="price">3</span>세트</p>
-                </div>
-              </li>
-              <li>
-                <div class="arithmetic plus"></div>
-                <div class="box">
-                  <p>배송비</p>
-                  <p><span class="price">3000</span>원</p>
-                </div>
-              </li>
-              <li>
-                <div class="arithmetic equal white"></div>
-                <div class="box">
-                  <p>합계</p>
-                  <p><span class="price">35000</span>원</p>
-                </div>
-              </li>
-            </ul>
-            <input class="submit--button--component order font-bold" type="submit" value="주문하기"/>
           </div>
         </form>
       </section>
