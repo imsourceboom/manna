@@ -216,7 +216,7 @@
               </tbody>
             </table>
             <!-- 포인트-->
-            <ul class="order--board">
+            <ul class="order--board error">
               <li>
                 <hgroup>
                   <h4>포인트</h4>
@@ -242,9 +242,10 @@
               <li>
                 <div class="flex align-center pl-2">비회원 주문 시 포인트를 사용할 수 없습니다.</div>
               </li>
+              <li class="caution">* error message</li>
             </ul>
             <!-- 주문자 정보-->
-            <ul class="order--board">
+            <ul class="order--board error">
               <li>
                 <hgroup>
                   <h4>주문자 정보</h4>
@@ -296,9 +297,10 @@
                   </label>
                 </div>
               </li>
+              <li class="caution">* 에러메세지</li>
             </ul>
             <!-- 배송자 정보-->
-            <ul class="order--board">
+            <ul class="order--board error">
               <li>
                 <hgroup>
                   <h4>배송 정보</h4>
@@ -325,6 +327,10 @@
               <li>
                 <div class="title">주소</div>
                 <div class="description direction-column align-start">
+                  <div class="flex column address-information">
+                    <p class="caution">* 세종시 1,2,3,4,5 생활권 배송가능</p>
+                    <p class="caution">- 이외에 생활권 지역은 문의바람</p>
+                  </div>
                   <div class="flex mt-05">
                     <label class="inputbox--component" for="">
                       <input type="input" disabled="disabled"/><span class="warning"></span><span class="able"></span>
@@ -384,9 +390,10 @@
                   <textarea class="textarea--component mt-05 mb-05 resize-none" name="" rows="10"></textarea>
                 </div>
               </li>
+              <li class="caution">* 에러메세지</li>
             </ul>
             <!-- 결제수단 (시안 확정 전)-->
-            <ul class="order--board">
+            <ul class="order--board error">
               <li>
                 <hgroup>
                   <h4>결제수단</h4>
@@ -395,12 +402,27 @@
               <li>
                 <div class="title">일반결제</div>
                 <div class="description">
-                  <input class="radio--button-component" type="radio" name="payment" id="card-payment" value="value" hidden="hidden" checked="checked"/>
-                  <label for="card-payment">신용카드</label>
-                  <input class="radio--button-component" type="radio" name="payment" id="phone-payment" value="value" hidden="hidden"/>
-                  <label for="phone-payment">휴대폰</label>
+                  <div class="payment--method">
+                    <div class="one">
+                      <input class="radio--button-component" type="radio" name="payment" id="credit-card" value="value" hidden="hidden" checked="checked"/>
+                      <label for="credit-card">신용카드</label>
+                    </div>
+                    <div class="one">
+                      <input class="radio--button-component" type="radio" name="payment" id="realtime-transfer" value="value" hidden="hidden" checked="checked"/>
+                      <label for="realtime-transfer">실시간 계좌이체</label>
+                    </div>
+                    <div class="one">
+                      <input class="radio--button-component" type="radio" name="payment" id="non-bankbook" value="value" hidden="hidden" checked="checked"/>
+                      <label for="non-bankbook">무통장입금</label>
+                    </div>
+                    <div class="one">
+                      <input class="radio--button-component" type="radio" name="payment" id="phone-payment" value="value" hidden="hidden" checked="checked"/>
+                      <label for="phone-payment">휴대폰</label>
+                    </div>
+                  </div>
                 </div>
               </li>
+              <li class="caution">* error message</li>
             </ul>
             <!-- 이용약관 (안의 내용들 너무 길어서 보류)-->
             <ul class="order--board">
@@ -419,7 +441,7 @@
               </li>
             </ul>
             <!-- 개인정보처리방침 (내용 확정 전)-->
-            <ul class="order--board mt-2">
+            <ul class="order--board mt-2 error">
               <li>
                 <hgroup>
                   <h4>개인정보처리방침</h4>
@@ -433,11 +455,12 @@
                   </label>
                 </div>
               </li>
-              <li style="border:0;">
+              <li style="border:0; min-height: 40px;">
                 <label class="checkbox--component mt-1">
                   <input type="checkbox"/><span>전체 항목 동의</span>
                 </label>
               </li>
+              <li class="caution">* error message</li>
             </ul>
           </div>
           <!-- 하단 fix 결제창-->
