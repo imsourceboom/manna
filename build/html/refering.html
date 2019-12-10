@@ -154,46 +154,75 @@
     </header>
     <main>
       <section id="refering">
-        <div class="container-default">
-          <div class="my--information-component">
-            <div class="box level">
-              <figure><img src="/assets/images/icons/user.svg" alt=""/></figure>
-              <div class="bundle">
-                <div class="title">마이페이지</div>
-                <div class="description">
-                  <b class="font-bold">userIdname</b>
-                  님은
-                  <span class="cyan">골드회원</span>
-                  입니다.
+        <form action="">
+          <div class="container-default">
+            <div class="my--information-component">
+              <div class="box level">
+                <figure><img src="/assets/images/icons/user.svg" alt=""/></figure>
+                <div class="bundle">
+                  <div class="title">마이페이지</div>
+                  <div class="description">
+                    <b class="font-bold">userIdname</b>
+                    님은
+                    <span class="cyan">골드회원</span>
+                    입니다.
+                  </div>
+                </div>
+              </div>
+              <div class="box point">
+                <figure></figure>
+                <div class="bundle">
+                  <div class="title">포인트</div>
+                  <div class="description">
+                    <span class="font-bold cyan">10000</span>
+                    point
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="box point">
-              <figure></figure>
-              <div class="bundle">
-                <div class="title">포인트</div>
-                <div class="description">
-                  <span class="font-bold cyan">10000</span>
-                  point
+            <div class="wrapper">
+              <nav class="mypage--navi-component">
+                <ul>
+                  <li class="active"><a href="/html/refering.html">- 주문 / 취소 조회</a></li>
+                  <li> <a href="/html/point.html">- 포인트 조회</a></li>
+                  <li><a href="/html/personal.html">- 개인정보 수정</a></li>
+                </ul>
+              </nav>
+              <div class="contents--box" style="border: 1px solid red;">
+                <hgroup class="mypage--title-component">
+                  <h2>주문조회<span class="swich"><a class="active" href="">주문조회</a><a href="">주문취소조회</a></span></h2>
+                </hgroup>
+                <div class="box">
+                  <div class="order--bundle-component">
+                    <div class="confirm--button--component">상세보기</div>
+                    <div class="head"></div>
+                    <ul class="list">
+                      <li>
+                        <div class="first">
+                          <label class="checkbox--component">
+                            <input type="checkbox"/>
+                          </label>
+                        </div>
+                        <div class="second"><span class="number">1</span></div>
+                        <div class="third">
+                          <figure><img src="https://source.unsplash.com/collection/190727/100x100" alt="">
+                            <figcaption>명이나물
+                              <p class="price">10000<span>원<small>[1개]</small></span></p>
+                            </figcaption>
+                          </figure>
+                        </div>
+                        <div class="fourth">
+                          <div class="state">배송 준비중</div>
+                          <div class="confirm--button--component">주문취소</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="contents--wrap">
-            <nav class="mypage--navi-component">
-              <ul>
-                <li class="active"><a href="/html/refering.html">- 주문 / 취소 조회</a></li>
-                <li> <a href="/html/point.html">- 포인트 조회</a></li>
-                <li><a href="/html/personal.html">- 개인정보 수정</a></li>
-              </ul>
-            </nav>
-            <div class="box" style="border: 1px solid red;">
-              <hgroup class="mypage--title-component">
-                <h2>주문조회<span class="swich"><a href="">주문조회</a><a href="">주문취소조회</a></span></h2>
-              </hgroup>
-            </div>
-          </div>
-        </div>
+        </form>
       </section>
     </main>
     <footer id="root-footer">
