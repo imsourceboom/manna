@@ -83,102 +83,41 @@
       </div>
     </nav>
     <main id="admin-root-container">
-      <section class="revise" id="admin-member">
+      <section class="revise" id="admin-category">
         <form action="">
           <article class="admin-title--component">
-            <h1>회원관리
+            <h1>분류관리
+              <ul>
+                <li class="active"><a href="">대분류관리</a></li>
+                <li><a href="">중분류관리</a></li>
+              </ul>
             </h1>
           </article>
           <div class="container-500">
-            <!-- 등록전 아이디 폼-->
-            <div class="custom-input--group id--area error">
-              <div class="title">아이디</div>
-              <div class="contents">
-                <div class="flex">
-                  <input class="admin-input" type="text" placeholder=" ">
-                  <div class="confirm--button--component">중복 검색</div>
-                </div>
-              </div>
-              <div class="warning">에러메세지</div>
-            </div>
-            <!-- 등록된 아이디-->
+            <!-- 부여된 아이디-->
             <div class="custom-input--group">
-              <div class="title">아이디</div>
+              <div class="title">분류아이디</div>
               <div class="contents">
                 <input class="admin-input border-0" type="text" value="userIdArea" disabled>
               </div>
             </div>
             <label class="custom label-input error">
-              <input type="password" placeholder=" "/><span>비밀번호</span>
+              <input type="text" placeholder=" "/><span>분류아이디</span>
               <div class="warning caution">에러메세지</div>
             </label>
-            <label class="custom label-input">
-              <input type="password" placeholder=" "/><span>비밀번호 재입력</span>
+            <label class="custom label-input error">
+              <input type="text" placeholder=" "/><span>분류명</span>
               <div class="warning caution">에러메세지</div>
             </label>
-            <label class="custom label-input">
-              <input type="text" placeholder=" "/><span>이름</span>
-              <div class="warning caution">에러메세지</div>
-            </label>
-            <div class="custom-input--group address error">
-              <div class="title">주소</div>
-              <div class="contents">
-                <div class="flex">
-                  <input class="admin-input represent-address" type="text" placeholder=" ">
-                  <div class="confirm--button--component">주소 검색</div>
-                </div>
-                <div class="flex">
-                  <input class="admin-input postalcode" type="text" placeholder=" ">
-                  <input class="admin-input detail-address" type="text" placeholder=" ">
-                </div>
-              </div>
-              <div class="warning">에러메세지</div>
-            </div>
-            <div class="custom-input--group phone error">
-              <div class="title">핸드폰 번호</div>
-              <div class="contents">
-                <div class="flex justify-between">
-                  <select class="select--component">
-                    <option>010</option>
-                    <option>011</option>
-                    <option>016</option>
-                    <option>019</option>
-                  </select>
-                  <input class="admin-input" type="text" placeholder=" ">
-                  <input class="admin-input" type="text" placeholder=" ">
-                </div>
-              </div>
-              <div class="warning">에러메세지</div>
-            </div>
-            <label class="custom label-input">
-              <input type="email" placeholder=" "/><span>이메일</span>
-              <div class="warning caution">에러메세지</div>
-            </label>
-            <label class="custom label-input">
-              <input type="text" placeholder=" "/><span>추천인 아이디</span>
-              <div class="warning caution">에러메세지</div>
-            </label>
-            <label class="custom label-input">
-              <input type="text" placeholder=" "/><span>포인트</span>
-              <div class="warning caution">에러메세지</div>
-            </label>
-            <div class="custom-input--group grade">
-              <div class="title">등급</div>
-              <div class="contents">
-                <select class="select--component">
-                  <option>골드</option>
-                </select>
-              </div>
-            </div>
             <div class="custom-input--group">
-              <div class="title">가입일</div>
-              <div class="contents">
-                <input class="admin-input border-0" type="text" value="19.12.12" disabled>
+              <div class="title">사용여부</div>
+              <div class="contents flex align-center">
+                <input class="radio--button-component" type="radio" name="use" id="used" value="value" hidden="hidden" checked="checked"/>
+                <label for="used">사용</label>
+                <input class="radio--button-component" type="radio" name="use" id="notuse" value="value" hidden="hidden"/>
+                <label for="notuse">사용하지 않음</label>
               </div>
             </div>
-            <label class="checkbox--component">
-              <input type="checkbox"/><span>마케팅용 이메일 수신 동의</span>
-            </label>
             <div class="flex justify-center mt-5">
               <div class="confirm--button--component mr-2">등록</div>
               <div class="confirm--button--component">취소</div>
