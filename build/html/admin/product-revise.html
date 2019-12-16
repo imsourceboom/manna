@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detaction" content="telephone=no, address=no, email=no">
+    <meta name="title" content="MANNA">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="MANNA">
+    <meta property="og:url" content="https://togoabc.com/">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="/assets/images/favicon/icon-512px.png">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicon/icon-144px.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/favicon/icon-512px.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon/icon-192px.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/images/favicon/icon-144px.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <title>MANNA 관리자</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js" async defer> </script>
+    <script src="/js/app.js" defer></script>
+  </head>
+  <body id="body">
+    <nav id="admin-navigation">
+      <div class="mobile">
+        <figure class="logo"><img src="/assets/images/admin-logo.svg" alt=""></figure>
+        <div class="admin-menu--icon">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="cover"></div>
+        <div class="container">
+          <figure class="close"><img src="/assets/images/icons/close.svg" alt=""></figure>
+          <ul class="menu-wrap">
+            <li><a href="/html/admin/notice.html">공지사항 관리</a></li>
+            <li><a href="/html/admin/member.html">회원관리</a></li>
+            <li><a href="/html/admin/category.html">분류관리</a></li>
+            <li><a href="/html/admin/product.html">상품관리</a></li>
+            <li><a href="/html/admin/dawn.html">새벽배송 관리</a></li>
+            <li><a href="/html/admin/order.html">주문관리</a></li>
+            <li><a href="/html/admin/config.html">설정관리</a></li>
+          </ul>
+          <div class="logout">
+            <p>관리자 정보</p>
+            <p>로그아웃</p>
+          </div>
+        </div>
+      </div>
+      <div class="desktop">
+        <figure class="logo"><img src="/assets/images/admin-logo.svg" alt=""></figure>
+        <div class="container">
+          <ul class="menu-wrap">
+            <li><a href="/html/admin/notice.html">공지사항 관리</a></li>
+            <li><a href="/html/admin/member.html">회원관리</a></li>
+            <li><a href="/html/admin/category.html">분류관리</a></li>
+            <li><a href="/html/admin/product.html">상품관리</a></li>
+            <li><a href="/html/admin/dawn.html">새벽배송 관리</a></li>
+            <li><a href="/html/admin/order.html">주문관리</a></li>
+            <li><a href="/html/admin/config.html">설정관리</a></li>
+          </ul>
+        </div>
+        <div class="logout">
+          <p>관리자 정보</p>
+          <p>로그아웃</p>
+        </div>
+      </div>
+    </nav>
+    <main id="admin-root-container">
+      <!-- 중분류-->
+      <section class="revise" id="admin-product">
+        <form action="">
+          <article class="admin-title--component">
+            <h1>상품관리
+            </h1>
+          </article>
+          <div class="container-500">
+            <div class="custom-input--group">
+              <div class="title">대분류명</div>
+              <div class="contents">
+                <select class="select--component">
+                  <option>선택지짐이 된장찌게구</option>
+                </select>
+              </div>
+            </div>
+            <div class="custom-input--group">
+              <div class="title">중분류명</div>
+              <div class="contents">
+                <select class="select--component">
+                  <option>선택</option>
+                </select>
+              </div>
+            </div>
+            <div class="custom-input--group">
+              <div class="title">분류아이디</div>
+              <div class="contents">
+                <input class="admin-input border-0" type="text" value="adsfadsf123" disabled>
+              </div>
+            </div>
+            <label class="custom label-input error">
+              <input type="text" placeholder=" "/><span>상품명</span>
+              <div class="warning caution">에러메세지</div>
+            </label>
+            <label class="custom label-input error">
+              <input type="text" placeholder=" "/><span>판매가</span>
+              <div class="warning caution">에러메세지</div>
+            </label>
+            <div class="custom-input--group">
+              <div class="title">상품수량</div>
+              <div class="contents flex align-center">
+                <div class="count--component">
+                  <div class="minus"><img src="/assets/images/icons/minus.svg" alt=""/></div>
+                  <div class="result">99</div>
+                  <div class="plus"><img src="/assets/images/icons/plus.svg" alt=""/></div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-input--group">
+              <div class="title">상품이미지</div>
+              <div class="contents">
+                <article class="attached-file" id="file-upload">
+                  <div class="select-wrap">
+                    <label class="upload-btn-wrapper" for="input_file_1">
+                      <input class="file-button-1" type="file" hidden="hidden" id="input_file_1"/>
+                      <figure class="upload-btn"><img src="/assets/images/icons/clip.svg" alt=""/>
+                        <figcaption>파일선택</figcaption>
+                      </figure>
+                    </label>
+                    <div class="count-wrap"></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="preview--wrap"><img src="" alt="" id="blah"></div>
+            <div class="custom-input--group">
+              <div class="title">상품타입</div>
+              <div class="contents flex align-center">
+                <input class="radio--button-component" type="radio" name="type" id="hit" value="value" hidden="hidden" checked="checked"/>
+                <label for="hit">Hit</label>
+                <input class="radio--button-component" type="radio" name="type" id="new" value="value" hidden="hidden"/>
+                <label for="new">New</label>
+                <input class="radio--button-component" type="radio" name="type" id="soldout" value="value" hidden="hidden"/>
+                <label for="soldout">매진임박</label>
+              </div>
+            </div>
+            <div class="custom-input--group">
+              <div class="title">최소구매 수량</div>
+              <div class="contents flex align-center">
+                <div class="count--component">
+                  <div class="minus"><img src="/assets/images/icons/minus.svg" alt=""/></div>
+                  <div class="result">99</div>
+                  <div class="plus"><img src="/assets/images/icons/plus.svg" alt=""/></div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-input--group">
+              <div class="title">최대구매 수량</div>
+              <div class="contents flex align-center">
+                <div class="count--component">
+                  <div class="minus"><img src="/assets/images/icons/minus.svg" alt=""/></div>
+                  <div class="result">99</div>
+                  <div class="plus"><img src="/assets/images/icons/plus.svg" alt=""/></div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-input--group">
+              <div class="title">판매여부</div>
+              <div class="contents flex align-center">
+                <label class="checkbox--component">
+                  <input type="checkbox"/><span>판매</span>
+                </label>
+                <div class="caution ml-1">* 체크시 판매 가능합니다.</div>
+              </div>
+            </div>
+            <div class="custom-input--group">
+              <div class="title">품절여부</div>
+              <div class="contents flex align-center">
+                <label class="checkbox--component">
+                  <input type="checkbox"/><span>품절</span>
+                </label>
+                <div class="caution ml-1">* 체크시 상품이 품절로 변경됩니다.</div>
+              </div>
+            </div>
+          </div>
+          <textarea name="" style="width: 100%; height: 500px;"></textarea>
+          <div class="container-500 center">
+            <!-- 버튼 영역-->
+            <div class="flex justify-center mt-5">
+              <div class="confirm--button--component mr-2">등록</div>
+              <div class="confirm--button--component">취소</div>
+            </div>
+            <div class="flex justify-center mt-5">
+              <div class="confirm--button--component mr-2">수정</div>
+              <div class="confirm--button--component mr-2">삭제</div>
+              <div class="confirm--button--component">목록</div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
