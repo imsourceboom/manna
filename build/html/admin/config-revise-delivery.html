@@ -83,122 +83,38 @@
       </div>
     </nav>
     <main id="admin-root-container">
-      <section class="revise" id="admin-product">
+      <!-- 설정관리 - 배송관리-->
+      <section class="revise" id="admin-config">
         <form action="">
           <article class="admin-title--component">
-            <h1>상품관리
+            <h1>설정관리
+              <ul>
+                <li class="active"><a href="">포인트관리</a></li>
+                <li><a href="">배송관리</a></li>
+              </ul>
             </h1>
           </article>
           <div class="container-500">
+            <label class="custom label-input error">
+              <input type="text" placeholder=" "/><span>생활권</span>
+              <div class="warning caution">에러메세지</div>
+            </label>
             <div class="custom-input--group">
-              <div class="title">대분류명</div>
-              <div class="contents">
-                <select class="select--component">
-                  <option>선택지짐이 된장찌게구</option>
-                </select>
-              </div>
-            </div>
-            <div class="custom-input--group">
-              <div class="title">중분류명</div>
+              <div class="title">시/도</div>
               <div class="contents">
                 <select class="select--component">
                   <option>선택</option>
                 </select>
               </div>
             </div>
-            <div class="custom-input--group">
-              <div class="title">분류아이디</div>
-              <div class="contents">
-                <input class="admin-input border-0" type="text" value="adsfadsf123" disabled>
-              </div>
-            </div>
             <label class="custom label-input error">
-              <input type="text" placeholder=" "/><span>상품명</span>
+              <input type="text" placeholder=" "/><span>지역명</span>
               <div class="warning caution">에러메세지</div>
             </label>
             <label class="custom label-input error">
-              <input type="text" placeholder=" "/><span>판매가</span>
+              <input type="text" placeholder=" "/><span>배송비</span>
               <div class="warning caution">에러메세지</div>
             </label>
-            <div class="custom-input--group">
-              <div class="title">상품수량</div>
-              <div class="contents flex align-center">
-                <div class="count--component">
-                  <div class="minus"><img src="/assets/images/icons/minus.svg" alt=""/></div>
-                  <div class="result">99</div>
-                  <div class="plus"><img src="/assets/images/icons/plus.svg" alt=""/></div>
-                </div>
-              </div>
-            </div>
-            <div class="custom-input--group">
-              <div class="title">상품이미지</div>
-              <div class="contents">
-                <article class="attached-file" id="file-upload">
-                  <div class="select-wrap">
-                    <label class="upload-btn-wrapper" for="input_file_1">
-                      <input class="file-button-1" type="file" hidden="hidden" id="input_file_1"/>
-                      <figure class="upload-btn"><img src="/assets/images/icons/clip.svg" alt=""/>
-                        <figcaption>파일선택</figcaption>
-                      </figure>
-                    </label>
-                    <div class="count-wrap"></div>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="preview--wrap"><img src="" alt="" id="blah"></div>
-            <div class="custom-input--group">
-              <div class="title">상품타입</div>
-              <div class="contents flex align-center">
-                <input class="radio--button-component" type="radio" name="type" id="hit" value="value" hidden="hidden" checked="checked"/>
-                <label for="hit">Hit</label>
-                <input class="radio--button-component" type="radio" name="type" id="new" value="value" hidden="hidden"/>
-                <label for="new">New</label>
-                <input class="radio--button-component" type="radio" name="type" id="soldout" value="value" hidden="hidden"/>
-                <label for="soldout">매진임박</label>
-              </div>
-            </div>
-            <div class="custom-input--group">
-              <div class="title">최소구매 수량</div>
-              <div class="contents flex align-center">
-                <div class="count--component">
-                  <div class="minus"><img src="/assets/images/icons/minus.svg" alt=""/></div>
-                  <div class="result">99</div>
-                  <div class="plus"><img src="/assets/images/icons/plus.svg" alt=""/></div>
-                </div>
-              </div>
-            </div>
-            <div class="custom-input--group">
-              <div class="title">최대구매 수량</div>
-              <div class="contents flex align-center">
-                <div class="count--component">
-                  <div class="minus"><img src="/assets/images/icons/minus.svg" alt=""/></div>
-                  <div class="result">99</div>
-                  <div class="plus"><img src="/assets/images/icons/plus.svg" alt=""/></div>
-                </div>
-              </div>
-            </div>
-            <div class="custom-input--group">
-              <div class="title">판매여부</div>
-              <div class="contents flex align-center">
-                <label class="checkbox--component">
-                  <input type="checkbox"/><span>판매</span>
-                </label>
-                <div class="caution ml-1">* 체크시 판매 가능합니다.</div>
-              </div>
-            </div>
-            <div class="custom-input--group">
-              <div class="title">품절여부</div>
-              <div class="contents flex align-center">
-                <label class="checkbox--component">
-                  <input type="checkbox"/><span>품절</span>
-                </label>
-                <div class="caution ml-1">* 체크시 상품이 품절로 변경됩니다.</div>
-              </div>
-            </div>
-          </div>
-          <textarea name="" style="width: 100%; height: 500px;"></textarea>
-          <div class="container-500 center">
             <!-- 버튼 영역-->
             <div class="flex justify-center mt-5">
               <div class="confirm--button--component mr-2">등록</div>

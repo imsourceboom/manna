@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detaction" content="telephone=no, address=no, email=no">
+    <meta name="title" content="MANNA">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="MANNA">
+    <meta property="og:url" content="https://togoabc.com/">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="/assets/images/favicon/icon-512px.png">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicon/icon-144px.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/favicon/icon-512px.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon/icon-192px.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/images/favicon/icon-144px.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <title>MANNA 관리자</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js" async defer> </script>
+    <script src="/js/app.js" defer></script>
+  </head>
+  <body id="body">
+    <nav id="admin-navigation">
+      <div class="mobile">
+        <figure class="logo"><img src="/assets/images/admin-logo.svg" alt=""></figure>
+        <div class="admin-menu--icon">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="cover"></div>
+        <div class="container">
+          <figure class="close"><img src="/assets/images/icons/close.svg" alt=""></figure>
+          <ul class="menu-wrap">
+            <li><a href="/html/admin/notice.html">공지사항 관리</a></li>
+            <li><a href="/html/admin/member.html">회원관리</a></li>
+            <li><a href="/html/admin/category.html">분류관리</a></li>
+            <li><a href="/html/admin/product.html">상품관리</a></li>
+            <li><a href="/html/admin/dawn.html">새벽배송 관리</a></li>
+            <li><a href="/html/admin/order.html">주문관리</a></li>
+            <li><a href="/html/admin/config.html">설정관리</a></li>
+          </ul>
+          <div class="logout">
+            <p>관리자 정보</p>
+            <p>로그아웃</p>
+          </div>
+        </div>
+      </div>
+      <div class="desktop">
+        <figure class="logo"><img src="/assets/images/admin-logo.svg" alt=""></figure>
+        <div class="container">
+          <ul class="menu-wrap">
+            <li><a href="/html/admin/notice.html">공지사항 관리</a></li>
+            <li><a href="/html/admin/member.html">회원관리</a></li>
+            <li><a href="/html/admin/category.html">분류관리</a></li>
+            <li><a href="/html/admin/product.html">상품관리</a></li>
+            <li><a href="/html/admin/dawn.html">새벽배송 관리</a></li>
+            <li><a href="/html/admin/order.html">주문관리</a></li>
+            <li><a href="/html/admin/config.html">설정관리</a></li>
+          </ul>
+        </div>
+        <div class="logout">
+          <p>관리자 정보</p>
+          <p>로그아웃</p>
+        </div>
+      </div>
+    </nav>
+    <main id="admin-root-container">
+      <!-- 설정관리 - 포인트관리-->
+      <section class="revise" id="admin-config">
+        <form action="">
+          <article class="admin-title--component">
+            <h1>설정관리
+              <ul>
+                <li class="active"><a href="">포인트관리</a></li>
+                <li><a href="">배송관리</a></li>
+              </ul>
+            </h1>
+          </article>
+          <div class="container-500">
+            <div class="custom-input--group">
+              <div class="title">회원가입</div>
+              <div class="contents">
+                <div class="information mb-03">* 가입시 가입한 회원에게 주어지는 포인트입니다.</div>
+                <input class="admin-input w-100" type="text" value="1000">
+                <div class="waring caution">* error</div>
+              </div>
+            </div>
+            <div class="custom-input--group">
+              <div class="title">포인트</div>
+              <div class="contents">
+                <div class="information mb-03">* 가입시 추천받은 회원에게 주어지는 포인트입니다.</div>
+                <input class="admin-input w-100" type="text" value="1000">
+                <div class="waring caution">* error</div>
+              </div>
+            </div>
+            <!-- 버튼 영역-->
+            <div class="flex justify-center mt-5">
+              <div class="confirm--button--component">수정</div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
