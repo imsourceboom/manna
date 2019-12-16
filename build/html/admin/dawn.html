@@ -25,6 +25,7 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#ffffff">
     <title>MANNA 관리자</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/main.css">
     <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js" async defer> </script>
@@ -89,237 +90,77 @@
             <h1>새벽배송 관리
             </h1>
           </article>
-          <div class="flex justify-end mb-07">
-            <select class="select--component board-select min-100">
-              <option>분류아이디</option>
-              <option>분류명</option>
-              <option>사용여부</option>
-            </select>
-            <label class="search--box-component">
-              <input type="text" placeholder="검색어를 입력하세요."/>
-              <input type="submit" value=""/>
-            </label>
-          </div>
-          <table class="table-basic--style">
-            <thead>
-              <tr>
-                <th>
-                  <label class="checkbox--component">
-                    <input type="checkbox"/>
-                  </label>
-                </th>
-                <th>번호</th>
-                <th>분류아이디</th>
-                <th>분류명</th>
-                <th>사용여부</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <label class="checkbox--component">
-                    <input type="checkbox"/>
-                  </label>
-                </td>
-                <td>
-                  <p>1</p>
-                </td>
-                <td> 
-                  <p>category001</p>
-                </td>
-                <td> 
-                  <p>반찬총알배송</p>
-                </td>
-                <td> 
-                  <p>사용</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="checkbox--component">
-                    <input type="checkbox"/>
-                  </label>
-                </td>
-                <td>
-                  <p>2</p>
-                </td>
-                <td> 
-                  <p>category001</p>
-                </td>
-                <td> 
-                  <p>반찬총알배송</p>
-                </td>
-                <td> 
-                  <p>사용</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="checkbox--component">
-                    <input type="checkbox"/>
-                  </label>
-                </td>
-                <td>
-                  <p>3</p>
-                </td>
-                <td> 
-                  <p>category001</p>
-                </td>
-                <td> 
-                  <p>반찬총알배송</p>
-                </td>
-                <td> 
-                  <p>사용</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="checkbox--component">
-                    <input type="checkbox"/>
-                  </label>
-                </td>
-                <td>
-                  <p>4</p>
-                </td>
-                <td> 
-                  <p>category001</p>
-                </td>
-                <td> 
-                  <p>반찬총알배송</p>
-                </td>
-                <td> 
-                  <p>사용</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="checkbox--component">
-                    <input type="checkbox"/>
-                  </label>
-                </td>
-                <td>
-                  <p>5</p>
-                </td>
-                <td> 
-                  <p>category001</p>
-                </td>
-                <td> 
-                  <p>반찬총알배송</p>
-                </td>
-                <td> 
-                  <p>사용</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="checkbox--component">
-                    <input type="checkbox"/>
-                  </label>
-                </td>
-                <td>
-                  <p>6</p>
-                </td>
-                <td> 
-                  <p>category001</p>
-                </td>
-                <td> 
-                  <p>반찬총알배송</p>
-                </td>
-                <td> 
-                  <p>사용</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="checkbox--component">
-                    <input type="checkbox"/>
-                  </label>
-                </td>
-                <td>
-                  <p>7</p>
-                </td>
-                <td> 
-                  <p>category001</p>
-                </td>
-                <td> 
-                  <p>반찬총알배송</p>
-                </td>
-                <td> 
-                  <p>사용</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="checkbox--component">
-                    <input type="checkbox"/>
-                  </label>
-                </td>
-                <td>
-                  <p>8</p>
-                </td>
-                <td> 
-                  <p>category001</p>
-                </td>
-                <td> 
-                  <p>반찬총알배송</p>
-                </td>
-                <td> 
-                  <p>사용</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="checkbox--component">
-                    <input type="checkbox"/>
-                  </label>
-                </td>
-                <td>
-                  <p>9</p>
-                </td>
-                <td> 
-                  <p>category001</p>
-                </td>
-                <td> 
-                  <p>반찬총알배송</p>
-                </td>
-                <td> 
-                  <p>사용</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="checkbox--component">
-                    <input type="checkbox"/>
-                  </label>
-                </td>
-                <td>
-                  <p>10</p>
-                </td>
-                <td> 
-                  <p>category001</p>
-                </td>
-                <td> 
-                  <p>반찬총알배송</p>
-                </td>
-                <td> 
-                  <p>사용</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flex mt-07">
-            <div class="confirm--button--component mr-1">삭제</div>
-            <div class="confirm--button--component">등록</div>
-          </div>
-          <ul class="pagination">
-            <li class="first"><a href=""><img src="/assets/images/icons/chevrons-left.svg" alt=""></a></li>
-            <li class="counts active"><a href="">1</a></li>
-            <li class="counts"><a href="">2</a></li>
-            <li class="counts"><a href="">3</a></li>
-            <li class="counts"><a href="">4</a></li>
-            <li class="counts"><a href="">5</a></li>
-            <li class="last"><a href=""><img src="/assets/images/icons/chevrons-right.svg" alt=""></a></li>
-          </ul>
+          <article class="calendar-container">
+            <div class="wrap">
+              <h3 class="card-header" id="monthAndYear"></h3>
+              <ul>
+                <li>일</li>
+                <li>월</li>
+                <li>화</li>
+                <li>수</li>
+                <li>목</li>
+                <li>금</li>
+                <li>토</li>
+              </ul>
+              <div class="box">
+                <table id="calendar">
+                  <tbody id="calendar-body"></tbody>
+                </table>
+                <div class="button-wrap">
+                  <button type="button" id="previous"><img src="/assets/images/icons/chevron-left-W.svg" alt=""/></button>
+                  <button type="button" id="next"><img src="/assets/images/icons/chevron-right-W.svg" alt=""/></button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="dawn-input--container">
+            <div class="diet--wrap">
+              <h3>새벽배송 식단표 구성</h3>
+              <div class="flex column">
+                <input id="dawn-flatpickr" type="text" value="00.00.00" data-input>
+                <textarea class="textarea--component" name="" rows="10"></textarea>
+              </div>
+              <div class="flex mt-2">
+                <div class="confirm--button--component alone">등록하기</div>
+              </div>
+              <div class="flex justify-around mt-2">
+                <div class="confirm--button--component">수정</div>
+                <div class="confirm--button--component">삭제</div>
+                <div class="confirm--button--component">취소</div>
+              </div>
+            </div>
+            <div class="middle--line"></div>
+            <div class="common--wrap">
+              <h3>새벽배송 공통사항</h3>
+              <div class="custom-input--group mb-03">
+                <div class="title"></div>
+                <div class="contents flex align-end">
+                  <div class="information">* 식단 기준은 식단표 확인란에 표시됩니다.</div>
+                </div>
+              </div>
+              <div class="custom-input--group mb-08">
+                <div class="title">식단기준</div>
+                <div class="contents">
+                  <input class="admin-input w-100" type="text" value="">
+                </div>
+              </div>
+              <div class="custom-input--group mb-08">
+                <div class="title">상품가격</div>
+                <div class="contents">
+                  <input class="admin-input w-100" type="text" value="">
+                </div>
+              </div>
+              <div class="custom-input--group mb-2">
+                <div class="title">배송비</div>
+                <div class="contents">
+                  <input class="admin-input w-100" type="text" value="">
+                </div>
+              </div>
+              <div class="flex">
+                <div class="confirm--button--component alone">수정하기</div>
+              </div>
+            </div>
+          </article>
         </form>
       </section>
     </main>
