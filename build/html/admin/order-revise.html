@@ -94,7 +94,8 @@
             </h1>
           </article>
           <div class="contents--box">
-            <ul class="step-state--component">
+            <!-- 아래 컴포넌트에 canceled 라는 class만 붙이면 주문 취소가 된다.-->
+            <ul class="step-state--component canceled">
               <li class="active">
                 <figure><img class="disable" src="/assets/images/step/recieve-stand.svg" alt=""><img class="able" src="/assets/images/step/recieve-stand-W.svg" alt="">
                   <figcaption>입금대기중</figcaption>
@@ -132,6 +133,9 @@
               <label for="order-state-4">배송중</label>
               <input class="radio--button-component" type="radio" name="order-state" id="order-state-5" value="value" hidden="hidden"/>
               <label for="order-state-5">배송완료</label>
+              <input class="radio--button-component" type="radio" name="order-state" id="order-state-6" value="value" hidden="hidden"/>
+              <label for="order-state-6">주문취소</label>
+              <div class="confirm--button--component">수정</div>
             </div>
             <div class="box">
               <div class="order--bundle-component">
